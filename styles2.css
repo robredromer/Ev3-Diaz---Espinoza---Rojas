@@ -1,0 +1,247 @@
+/* Reset básico */
+* {
+  box-sizing: border-box; /* Establece el modelo de caja en 'border-box' para todos los elementos */
+  margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+  padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+}
+
+/* General */
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Establece la tipografía base */
+  background-color: #000000; /* Establece el color de fondo para la página */
+  color: #e0e0e0; /* Establece el color del texto */
+  display: flex; /* Usa flexbox para el diseño */
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: flex-start; /* Alinea los elementos al inicio de la página */
+  min-height: 100vh; /* Asegura que la altura mínima sea el 100% de la ventana */
+  padding: 20px; /* Agrega relleno a la página */
+}
+
+.center-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ff0000; /* Color de fondo amarillo */
+  cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
+}
+
+.img {
+  width: 20px; /* Establece el tamaño de la imagen */
+  height: 20px; /* Establece el tamaño de la imagen */
+}
+
+/* Estilo para la ventana emergente de notificaciones */
+.notification-window {
+  position: fixed;
+  top: 50%; /* Posiciona la ventana en el centro de la pantalla */
+  left: 50%; /* Posiciona la ventana en el centro de la pantalla */
+  transform: translate(-50%, -50%); /* Ajusta la ventana para que quede centrada */
+  background-color: #333; /* Color de fondo gris oscuro */
+  border: 1px solid #ff0000; /* Borde amarillo */
+  padding: 20px; /* Espaciado interno */
+  width: 300px; /* Ancho de la ventana */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera para dar profundidad */
+  color: #fff; /* Color de texto blanco */
+}
+
+.notification-window h2 {
+  margin-top: 0; /* Elimina el margen superior */
+}
+
+.notification-window ul {
+  list-style: none; /* Elimina los puntos de lista */
+  padding: 0; /* Elimina el relleno */
+  margin: 0; /* Elimina el margen */
+}
+
+.notification-window li {
+  margin-bottom: 10px; /* Agrega espacio entre los elementos de la lista */
+  color: #000000; /* Color de texto negro para los elementos de la lista */
+}
+
+.notification-window button {
+  background-color: #ff0000; /* Color de fondo amarillo */
+  color: #fff; /* Color de texto blanco */
+  padding: 10px 20px; /* Relleno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a mano */
+}
+
+.notification-window button:hover {
+  background-color: #d93b2a; /* Color de fondo rojo cuando se pasa el cursor */
+}
+
+/* Botón de login para empleados */
+.btn-login { 
+  display: inline-block; /* Para que se comporte como un botón */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Sin subrayado */
+  background-color: #ff0000; /* Color de fondo amarillo */
+  color: #ffffff; /* Color de texto blanco */
+  padding: 10px 20px; /* Relleno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1em; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor a mano */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  margin-left: 10px; /* Espacio a la izquierda del botón */
+  margin-right: 10px; /* Espacio a la derecha del botón */
+  width: 150%; /* Ancho completo de cerrar sesión (cliente y empleado)*/
+  margin-bottom: 1px; /* Agrega margen inferior */
+}
+
+/* Botón de login para clientes */
+.btn-login2 { 
+  display: inline-block; /* Para que se comporte como un botón */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Sin subrayado */
+  background-color: #ff0000; /* Color de fondo amarillo */
+  color: #ffffff; /* Color de texto blanco */
+  padding: 10px 20px; /* Relleno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1em; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor a mano */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  margin-left: 10px; /* Espacio a la izquierda del botón */
+  margin-right: 10px; /* Espacio a la derecha del botón */
+  width: 150%; /* Ancho completo de cerrar sesión (cliente y empleado)*/
+  margin-bottom: -4px; /* Agrega margen inferior */
+}
+
+/* Estilos de hover para los botones */
+.btn-login:hover, .btn-login2:hover {
+  background-color: #de423a; /* Color de fondo rojo al pasar el cursor */
+  color: #ffffff; /* Color del texto blanco al pasar el cursor */
+}
+
+/* Estilo para la sección de opciones de notificaciones */
+#notification-options {
+  display: flex; /* Usa flexbox para organizar los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  margin-bottom: 10px; /* Agrega margen inferior */
+  color: #000000; /* Establece el color de texto negro */
+}
+
+/* Estilo para el checkbox de notificaciones */
+#notification-switch {
+  margin-left: 10px; /* Espacio a la izquierda */
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Estilos para los títulos */
+h1, h2 {
+  color: #fdc62d; /* Color dorado para los títulos */
+  text-align: center; /* Centra los títulos */
+  margin: 20px 0; /* Márgenes superiores e inferiores */
+}
+
+/* Estilos para el formulario */
+form {
+  background-color: #333; /* Fondo gris oscuro */
+  border: 1px solid #333; /* Borde gris oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  width: 100%; /* Ancho completo */
+  max-width: 400px; /* Ancho máximo de 400px */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+}
+
+/* Estilos para inputs y botones en formulario */
+form input, form textarea {
+  width: 100%; /* Hace que los campos ocupen todo el ancho disponible */
+  padding: 10px; /* Agrega relleno */
+  margin-bottom: 15px; /* Agrega margen debajo de cada campo */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 4px; /* Redondea las esquinas de los campos */
+  background-color: #444; /* Fondo oscuro para los campos */
+  color: #e0e0e0; /* Color de texto gris claro */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilos para el botón de guardar */
+form button {
+  width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+  padding: 10px; /* Relleno */
+  background-color: #ff0000; /* Fondo amarillo */
+  border: none; /* Elimina el borde */
+  border-radius: 4px; /* Bordes redondeados */
+  color: white; /* Color de texto blanco */
+  font-size: 1rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor a mano */
+  transition: background-color 0.3s ease, transform 0.2s; /* Transición suave para el fondo y el escalado */
+}
+
+/* Estilos para el hover del botón */
+form button:hover {
+  background-color: #f44336; /* Color de fondo rojo */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Estilos para la lista de productos */
+ul#product-list {
+  list-style-type: none; /* Elimina los puntos de lista */
+  padding: 0; /* Elimina el relleno */
+  width: 100%; /* Hace que la lista ocupe todo el ancho disponible */
+  max-width: 600px; /* Ancho máximo de 600px */
+}
+
+ul#product-list li {
+  background-color: #333; /* Fondo gris oscuro */
+  margin-bottom: 10px; /* Espacio entre los elementos */
+  padding: 15px; /* Relleno */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 1px solid #333; /* Borde gris oscuro */
+}
+
+ul#product-list li .product-info {
+  margin-bottom: 10px; /* Espacio debajo de la información del producto */
+}
+
+ul#product-list li .button-container {
+  display: flex; /* Usa flexbox para alinear los botones */
+  justify-content: space-between; /* Espacio entre los botones */
+}
+
+/* Estilos para los botones dentro de la lista de productos */
+ul#product-list li button {
+  padding: 10px; /* Relleno */
+  border-radius: 4px; /* Bordes redondeados */
+  color: rgb(255, 255, 255); /* Color blanco para el texto */
+  font-size: 1rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor a mano */
+  transition: background-color 0.3s ease, transform 0.2s; /* Transición suave */
+}
+
+ul#product-list li button:nth-child(1) {
+  background-color: #ff0000; /* Fondo amarillo */
+}
+
+ul#product-list li button:nth-child(2) {
+  background-color: #ff0000; /* Fondo amarillo */
+}
+
+ul#product-list li button:hover {
+  background-color: #f44336; /* Fondo rojo al pasar el cursor */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilo para los botones de descuento y promoción */
+button.discount-button {
+  background-color: #8bc34a; /* Fondo verde para descuento */
+}
+
+button.promotion-button {
+  background-color: #ff5722; /* Fondo naranja para promoción */
+}
+
+button.discount-button:hover {
+  background-color: #689f38; /* Fondo verde más oscuro al pasar el cursor */
+}
+
+button.promotion-button:hover {
+  background-color: #f44336; /* Fondo rojo al pasar el cursor */
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definir la codificación de caracteres del documento como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <title>Galería</title>
+    <!-- Configuración de la vista para hacer que la página sea responsiva en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <!-- Vinculación de hojas de estilo CSS externas para el diseño de la página -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace para los íconos personalizados -->
+    <link href="https://file.myfontastic.com/3j45yvRpaWhzeStdASehh9/icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <header class="main-header">
+        <div class="container container--flex">
+            <!-- Contenedor del logo -->
+            <div class="logo-container column column--50">
+                <h1 class="logo">La Picá del Tío Juanito</h1>
+            </div>
+            <!-- Información de contacto en el encabezado -->
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <!-- Icono y número de teléfono -->
+                    <span class="icon-phone">+56 9 96849685</span>
+                </p>
+                <p class="main-header__contactInfo__addres">
+                    <!-- Icono y dirección -->
+                    <span class="icon-location">Calle de Servicio Ruta 154, Talcahuano</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Barra de navegación principal -->
+    <nav class="main_nav">
+        <div class="container container--flex">
+            <!-- Icono para abrir el menú -->
+            <span class="icon-menu" id="btnmenu"></span>
+            <!-- Menú de navegación -->
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="servicios.html" class="menu__link">Servicios</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galería</a></li>
+            </ul>
+            <!-- Enlaces a redes sociales -->
+            <div class="social-icon">
+                <a href="#" target="_blank" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="#" target="_blank" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="https://www.instagram.com/lapicadeltiojuanito/" target="_blank" class="social-icon__link"><span class="icon-instagram"></span></a>
+                <!-- Botón para registrarse o iniciar sesión -->
+                <button class="btn-login" onclick="window.location.href='../login-registro.html'">Registrarse/Iniciar Sesión</button>            
+            </div>
+        </div>
+    </nav>
+    
+    <section class="banner">
+        <img src="img/image2.jpg" alt="Banner de Comida" class="banner__img" />
+        <div class="banner__content">Nuestra Comida</div>
+      </section>
+  
+      <!-- Slider de imágenes -->
+      <div class="slider-container" id="slider-container">
+        <div class="slider-item">
+          <img src="img/1.jpeg" alt="Comida 1" />
+        </div>
+        <div class="slider-item">
+          <img src="img/2.jpeg" alt="Comida 2" />
+        </div>
+        <div class="slider-item">
+          <img src="img/3.jpeg" alt="Comida 3" />
+        </div>
+        <div class="slider-item">
+          <img src="img/4.jpeg" alt="Comida 4" />
+        </div>
+        <div class="slider-item">
+          <img src="img/5.jpeg" alt="Comida 5" />
+        </div>
+        <div class="slider-item">
+          <img src="img/6.jpeg" alt="Comida 6" />
+        </div>
+        <div class="slider-item">
+          <img src="img/7.jpg" alt="Comida 7" />
+        </div>
+        <div class="slider-item">
+          <img src="img/8.jpeg" alt="Comida 8" />
+        </div>
+        <div class="slider-item">
+          <img src="img/9.jpeg" alt="Comida 9" />
+        </div>
+        <div class="slider-item">
+          <img src="img/10.jpeg" alt="Comida 10" />
+        </div>
+        <div class="slider-item">
+          <img src="img/11.jpeg" alt="Comida 11" />
+        </div>
+        <div class="slider-item">
+          <img src="img/12.jpeg" alt="Comida 12" />
+        </div>
+      </div>
+      <br />
+      <footer class="main-footer">
+        <div class="container container--flex">
+          <div class="column column--33">
+            <h2 class="column__title">Visítanos</h2>
+            <p class="column__txt">
+              Calle de Servicio Ruta 154, Talcahuano<br />Al frente de UNAB
+            </p>
+            <p class="column__txt">
+              Horarios de atención:<br />
+              Lunes a viernes: 9:00 - 23:30<br />
+              Sábados: 10:00 - 14:00
+            </p>
+          </div>
+          <div class="column column--33">
+            <h2 class="column__title">Contáctanos</h2>
+            <p class="column__txt">Correo: info@tiojuanito.cl</p>
+            <p class="column__txt">Teléfono: +56 9 96849685</p>
+          </div>
+          <div class="column column--33">
+                <h2 class="column__title">Síguenos</h2>
+                <p class="column__txt">
+                    <a href="#" class="icon-facebook" target="_blank">Facebook</a>
+                </p>
+                <p class="column__txt">
+                    <a href="#" class="icon-twitter" target="_blank">Twitter</a>
+                </p>
+                <p class="column__txt">
+                    <a href="https://www.instagram.com/lapicadeltiojuanito/" class="icon-instagram" target="_blank">Instagram</a>
+                </p>
+            </div>     
+            <p class="copy">2024 - La Picá del Tío Juanito Food Truck | Todos los derechos reservados</p>
+        </div>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/menu.js"></script>
+      <script>
+        const slider = document.getElementById("slider-container");
+  
+        let scrollInterval = setInterval(() => {
+          slider.scrollLeft += 1;
+          if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+            slider.scrollLeft = 0;
+          }
+        }, 20);
+      </script>
+    </body>
+  </html>

@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Definimos la codificación de caracteres como UTF-8 -->
+    <!-- Definición del conjunto de caracteres del documento (UTF-8) -->
     <meta charset="UTF-8">
-    <!-- Título de la página que aparecerá en la pestaña del navegador -->
-    <title>La Picá del Tío Juanito</title>
-    <!-- Meta etiqueta para controlar la escala y el tamaño de la página en dispositivos móviles -->
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Servicios</title>
+    
+    <!-- Metaetiqueta que establece la compatibilidad con dispositivos móviles (viewport) -->
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
-    <!-- Enlace a la hoja de estilos CSS para el diseño del sitio web -->
-    <link rel="stylesheet" href="tiojuanito/css/estilo.css">
-    <!-- Enlace a los iconos que se utilizarán en la página -->
+    
+    <!-- Vincula las hojas de estilo externas para dar formato a la página -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/about.css">
+    
+    <!-- Vincula un archivo de iconos -->
     <link href="https://file.myfontastic.com/3j45yvRpaWhzeStdASehh9/icons.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabecera del sitio, que incluye el logo y la información de contacto -->
+    <!-- Cabecera principal de la página -->
     <header class="main-header">
         <div class="container container--flex">
-            <!-- Contenedor para el logo -->
+            <!-- Logo de la empresa -->
             <div class="logo-container column column--50">
                 <h1 class="logo">La Picá del Tío Juanito</h1>
             </div>
-            <!-- Contenedor para la información de contacto -->
+            
+            <!-- Información de contacto: teléfono y dirección -->
             <div class="main-header__contactInfo column column--50">
                 <p class="main-header__contactInfo__phone">
                     <span class="icon-phone">+56 9 96849685</span>
@@ -31,70 +37,74 @@
             </div>
         </div>
     </header>
-
-    <!-- Barra de navegación -->
+    
+    <!-- Barra de navegación principal -->
     <nav class="main_nav">
         <div class="container container--flex">
-            <!-- Icono de menú que se activará en dispositivos móviles -->
+            <!-- Icono de menú para dispositivos móviles -->
             <span class="icon-menu" id="btnmenu"></span>
+            
             <!-- Menú de navegación -->
             <ul class="menu" id="menu">
-                <li class="menu__item"><a href="../index.html" class="menu__link menu__link--select">Inicio</a></li>
-                <li class="menu__item"><a href="tiojuanito/servicios.html" class="menu__link">Servicios</a></li>
-                <li class="menu__item"><a href="tiojuanito/galeria.html" class="menu__link">Galería</a></li>
+                <li class="menu__item"><a href="../index.html" class="menu__link menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="servicios.html" class="menu__link menu__link--select">Servicios</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galería</a></li>
             </ul>
-            <!-- Iconos de redes sociales -->
+            
+            <!-- Íconos sociales y botón de registro/login -->
             <div class="social-icon">
                 <a href="#" target="_blank" class="social-icon__link"><span class="icon-facebook"></span></a>
                 <a href="#" target="_blank" class="social-icon__link"><span class="icon-twitter"></span></a>
                 <a href="https://www.instagram.com/lapicadeltiojuanito/" target="_blank" class="social-icon__link"><span class="icon-instagram"></span></a>
-                <!-- Botón para iniciar sesión o registrarse -->
-                <button class="btn-login" onclick="window.location.href='../login-registro.html'">Registrarse/Iniciar Sesión</button>            
+                <button class="btn-login" onclick="window.location.href='../login-registro.html'">Registrarse/Iniciar Sesión</button>
             </div>
         </div>
     </nav>
-
+    
+    <!-- Sección de banner de la página -->
     <section class="banner">
-    <img src="tiojuanito/img/image1.png" alt="Banner" class="banner__img">
-    <div class="banner__content">La Picá del Tío Juanito</div>
-</section>
-
-
-    <!-- Contenido principal del sitio -->
+        <img src="img/image3.jpeg" alt="" class="banner__img"> 
+        <div class="banner__content">Nuestra Cocina, Tu Gusto</div>
+    </section>
+    
+    <!-- Sección principal del contenido -->
     <main class="main">
+        <!-- Sección sobre la empresa -->
         <section class="group--color">
             <div class="container">
-                <h2 class="main__title">Bienvenido a La Picá del Tío Juanito</h2>
+                <h2 class="main__title">Sobre Nosotros</h2>
                 <p class="main_txt">
-                    ¡Descubre el sabor único de La Picá del Tío Juanito! Te invitamos a vivir una experiencia deliciosa en el mejor rincón de comida rápida.
+                    En La Picá del Tío Juanito, cada plato es una celebración del sabor y la calidad. No es solo comida rápida, es una experiencia que vas a querer repetir: Nuestro menú está pensado para esos momentos en los que necesitas algo rápido, pero que no sacrifica el sabor ni la calidad.
                 </p>
             </div>
         </section>
-
-        <!-- Sección sobre el diseño y fabricación personalizada -->
-        <section class="group main__about_description">
+        
+        <!-- Sección de presentación del equipo de trabajo -->
+        <section class="group our-team">
+            <h2 class="group__title">Conoce a Nuestro Equipo</h2>
             <div class="container container--flex">
-                <div class="column column--50">
-                    <img src="tiojuanito/img/image.jpg" alt="La Píca del Tío Juanito" class="column__img">
+                <div class="column column--33">
+                    <h3 class="our-team__title">Tio Juanito</h3>
+                    <img src="img/persona2.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">Tío Juanito es el dueño del food truck</p>
                 </div>
-                <div class="column column--50">
-                    <h3 class="column__title">En La Picá del Tío Juanito, cada bocado es un momento para disfrutar</h3>
-                    <p class="column__txt">
-                        ¡Ven con tu familia, amigos o date un gusto personal! Estamos aquí para ofrecerte comida rápida de calidad con el mejor servicio. ✨ ¡No esperes más! Descubre el lugar donde el sabor y la buena onda se encuentran. 🌭🍔🌯🍟🥤
-
-
-                    </p>
-                    <!-- Enlace a la galería de imágenes -->
-                    <a href="tiojuanito/galeria.html" class="btn btn--contact">Explorar</a>
+                <div class="column column--33">
+                    <h3 class="our-team__title"> Cajero </h3>
+                    <img src="img/persona1.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">Encargado de recepcionar los pedidos</p>
+                </div>
+                <div class="column column--33">
+                    <h3 class="our-team__title">Cocinero</h3>
+                    <img src="img/persona3.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">El creador de la mejor comida</p>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- Pie de página con información de contacto, ubicación y redes sociales -->
+    
+    <!-- Sección de pie de página con información de contacto -->
     <footer class="main-footer">
         <div class="container container--flex">
-            <!-- Sección con la ubicación de la tienda -->
             <div class="column column--33">
                 <h2 class="column__title">Visítanos</h2>
                 <p class="column__txt">Calle de Servicio Ruta 154, Talcahuano<br>Al frente de UNAB</p>
@@ -104,13 +114,11 @@
                     Sábados: 10:00 - 14:00
                 </p>
             </div>
-            <!-- Sección con el correo y teléfono para contacto -->
             <div class="column column--33">
                 <h2 class="column__title">Contáctanos</h2>
                 <p class="column__txt">Correo: info@tiojuanito.cl</p>
                 <p class="column__txt">Teléfono: +56 9 96849685</p>
             </div>
-            <!-- Sección para seguir en redes sociales -->
             <div class="column column--33">
                 <h2 class="column__title">Síguenos</h2>
                 <p class="column__txt">
@@ -122,13 +130,12 @@
                 <p class="column__txt">
                     <a href="https://www.instagram.com/lapicadeltiojuanito/" class="icon-instagram" target="_blank">Instagram</a>
                 </p>
-            </div>            
-            <!-- Copyright -->
+            </div>     
             <p class="copy">2024 - La Picá del Tío Juanito Food Truck | Todos los derechos reservados</p>
         </div>
     </footer>
-
-    <!-- Enlace a un archivo de JavaScript para el funcionamiento del menú -->
-    <script src="tiojuanito/js/menu.js"></script>
+    
+    <!-- Vinculación del archivo JavaScript para la funcionalidad del menú -->
+    <script src="js/menu.js"></script>
 </body>
 </html>
