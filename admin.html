@@ -234,8 +234,8 @@ function closeNotificationWindow() {
       const description = document.getElementById('product-description').value;
       const price = document.getElementById('product-price').value;
       const stock = document.getElementById('product-stock').value;
-      const discount = document.getElementById('product-discount').value;
-      const promotion = document.getElementById('product-promotion').value;
+      const discount = ""; // Campo oculto, enviamos vacío
+      const promotion = ""; // Campo oculto, enviamos vacío
       saveProduct(id, name, description, price, stock, discount, promotion);
     });
   </script>
@@ -307,12 +307,13 @@ function closeNotificationWindow() {
     <button onclick="openPopup()">Abrir Configuración de Notificaciones</button>
     <button onclick="window.location.href='../index.html'">Volver a Inicio</button>
     <button onclick="window.location.href='../login-registro.html'">Cerrar Sesión</button>
+    <br>
     <input type="text" id="product-name" placeholder="Nombre" required/>
     <textarea id="product-description" placeholder="Descripción" required></textarea>
     <input type="number" id="product-price" placeholder="Precio" required />
     <input type="number" id="product-stock" placeholder="Stock" required />
 
-    <!-- Opciones para seleccionar descuento y/o promoción -->
+    <!-- Opciones para seleccionar descuento y/o promoción 
     <div class="checkbox-container">
       <div>
         <input type="checkbox" id="discount-checkbox" onclick="handleDiscountPromotionChange()">
@@ -324,15 +325,15 @@ function closeNotificationWindow() {
       </div>
     </div>
 
-    <!-- Campo de descuento -->
+     Campo de descuento 
     <div>
       <input type="number" id="product-discount" placeholder="Descuento (%)" disabled />
     </div>
 
-    <!-- Campo de promoción -->
+    Campo de promoción 
     <div>
       <input type="text" id="product-promotion" placeholder="Promoción" disabled />
-    </div>
+    </div> -->
 
     <!-- Mensaje de advertencia -->
     <div id="warning-message"></div>
