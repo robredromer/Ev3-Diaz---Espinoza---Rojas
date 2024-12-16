@@ -1,6 +1,5 @@
 .our-team {
-	/* Fondo de la sección más claro */
-	background-color: #040680; /* Color gris claro */
+	background-color: #040680;
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -20,7 +19,6 @@
 	width: 180px;
 	height: 180px;
 	object-fit: cover;
-	/* Eliminamos el border-radius para que las imágenes sean cuadradas */
 	margin: auto;
 }
 
