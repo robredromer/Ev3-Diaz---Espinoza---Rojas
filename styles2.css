@@ -186,15 +186,21 @@ ul#product-list {
   list-style-type: none; /* Elimina los puntos de lista */
   padding: 0; /* Elimina el relleno */
   width: 100%; /* Hace que la lista ocupe todo el ancho disponible */
-  max-width: 500px; /* Ancho máximo de 600px */
+  max-width: 800px;
+  display: flex; /* Usar Flexbox para organizar los elementos */
+  flex-wrap: wrap; /* Permite que los elementos salten a una nueva fila */
+  justify-content: center; /* Centra las filas horizontalmente */
+  gap: 20px; /* Espaciado entre los elementos */
 }
 
 ul#product-list li {
   background-color: #665858; /* Fondo */
-  margin-bottom: 10px; /* Espacio entre los elementos */
+  margin-bottom: 50px; /* Espacio entre los elementos */
   padding: 15px; /* Relleno */
   border-radius: 8px; /* Bordes redondeados */
   border: 1px solid #000000; /* Bordes */
+  flex: 1 1 calc(50% - 10px); /* Cada elemento ocupa el 50% menos el espacio del gap */
+  box-sizing: border-box; /* Asegura que padding y borde se incluyan en el ancho */
 }
 
 ul#product-list li .product-info {
