@@ -23,7 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: #ff0000; /* Color de fondo */
+  background-color: #552f2f; /* Color de fondo */
   cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
 }
 
@@ -141,7 +141,7 @@ h1, h2 {
 
 /* Estilos para el formulario */
 form {
-  background-color: #333; /* Fondo */
+  background-color: #817e7e; /* Fondo */
   border: 1px solid #333; /* Bordes */
   border-radius: 8px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
@@ -166,7 +166,7 @@ form input, form textarea {
 form button {
   width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
   padding: 10px; /* Relleno */
-  background-color: #ff0000; /* Fondo */
+  background-color: #533838; /* Fondo */
   border: none; /* Elimina el borde */
   border-radius: 4px; /* Bordes redondeados */
   color: white; /* Color de texto blanco */
@@ -177,7 +177,7 @@ form button {
 
 /* Estilos para el hover del botón */
 form button:hover {
-  background-color: #f44336; /* Color de fondo */
+  background-color: #6d3d3a; /* Color de fondo */
   transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
 }
 
@@ -186,30 +186,29 @@ ul#product-list {
   list-style-type: none; /* Elimina los puntos de lista */
   padding: 0; /* Elimina el relleno */
   width: 100%; /* Hace que la lista ocupe todo el ancho disponible */
-  max-width: 600px; /* Ancho máximo de 600px */
+  max-width: 500px; /* Ancho máximo de 600px */
 }
 
 ul#product-list li {
-  background-color: #333; /* Fondo */
+  background-color: #665858; /* Fondo */
   margin-bottom: 10px; /* Espacio entre los elementos */
   padding: 15px; /* Relleno */
   border-radius: 8px; /* Bordes redondeados */
-  border: 1px solid #333; /* Bordes */
+  border: 1px solid #000000; /* Bordes */
 }
 
 ul#product-list li .product-info {
-  margin-bottom: 10px; /* Espacio debajo de la información del producto */
+  margin-bottom: 20px; /* Espacio debajo de la información del producto */
 }
 
 ul#product-list li .button-container {
-  display: flex; /* Usa flexbox para alinear los botones */
   justify-content: space-between; /* Espacio entre los botones */
 }
 
 /* Estilos para los botones dentro de la lista de productos */
 ul#product-list li button {
   padding: 10px; /* Relleno */
-  border-radius: 4px; /* Bordes redondeados */
+  border-radius: 10px; /* Bordes redondeados */
   color: rgb(255, 255, 255); /* Color para el texto */
   font-size: 1rem; /* Tamaño de fuente */
   cursor: pointer; /* Cambia el cursor a mano */
@@ -228,22 +227,4 @@ ul#product-list li button:hover {
   background-color: #f44336; /* Fondo al pasar el cursor */
   transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
-
-/* Estilo para los botones de descuento y promoción */
-button.discount-button {
-  background-color: #8bc34a; /* Fondo para descuento */
-}
-
-button.promotion-button {
-  background-color: #ff5722; /* Fondo para promoción */
-}
-
-button.discount-button:hover {
-  background-color: #689f38; /* Fondo más oscuro al pasar el cursor */
-}
-
-button.promotion-button:hover {
-  background-color: #f44336; /* Fondo al pasar el cursor */
-}
-
 
